@@ -4,6 +4,7 @@ require("es5-shim")
 // es6 polyfills, powered by babel
 require("babel/polyfill")
 
+
 var Promise = require('es6-promise').Promise
 // just Node?
 // var fetch = require('node-fetch')
@@ -14,12 +15,19 @@ var Promise = require('es6-promise').Promise
 // var Pace = require("../bower_components/pace/pace.js")
 
 // require your own libraries, too!
-// var Router = require('./app.js')
+var bb = require('backbone');
+// var $ = require('jquery');
+// var React = require('react');
 
-// window.addEventListener('load', app)
 
-// function app() {
+// var App = require('./app.js').App
+var Literal = require('./app.js').Literal
+
+window.addEventListener('load', app)
+
+function app() {
     // start app
-    // new Router()
-// }
-
+    // new App();
+    Literal.printSayHello('tootie');
+}
+	
