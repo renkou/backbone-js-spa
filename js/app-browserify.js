@@ -28,6 +28,6 @@ window.addEventListener('load', app)
 function app() {
     // start app
     // new App();
-    Literal.printSayHello('test');
+    Literal.printSayHello('test number 2');
 }
 	
