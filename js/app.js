@@ -15,10 +15,16 @@ export var Literal = {
 
 	printSayHello: function (text) {
 		var saying = this.sayHello(text);
+		// var array = [5,6,7,'nine'];
+		// var test = _.each([0,1,2], function(num) {alert(this[num]);}, array);
 
 		$('#who-said').html(saying);
+		// $('#who-said').html(test);
+
 	}
 }
+
+
 
 // var a = [
 // 	{

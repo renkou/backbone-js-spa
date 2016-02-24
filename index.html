@@ -9,11 +9,33 @@
 
 <body>
     <div class="container"></div>
-    <span id="who-said"></span>
+    <span id="who-said"></span>    
+	<hr/>    
 
-    
-    
+    <!-- <section id="todo-app">
+    	<header id="header">
+    		<h1>Todos</h1>
+    		<input id="new-todo" placeholder="What needs to be done?"/>
+    	</header>
+	    <section id="main">
+	    	<ul id="todo-list"></ul>
+	    </section>
+    </section> -->
+
+    <div id="contacts"></div>
+
+    <script id="contactTemplate" type="text/template">
+    	<img src="<%= photo %>"	alt="<%= name %>" />
+	    <h1><%= name %><span><%= type %></span></h1>
+	    <div><%= address %></div>
+	    <dl>
+	    	<dt>Tel:</dt><dd><%= tel %></dd>
+		    <dt>Email:</dt><dd><a href="mailto:<%= email %>"><%= email %></a></dd>
+	    </dl>
+    </script>
+
     <script type="text/javascript" src="./dist/app-browserify.js"></script>
+
 </body>
 
 </html>
